@@ -70,6 +70,7 @@ form{
   margin: 0 auto;
 }
 
+
 .card{
   display: flex;
   justify-content: space-around;
@@ -92,6 +93,11 @@ form{
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.doctor-avatar {
+  width: 15vw;
+  height: auto;
 }
 
 table {
