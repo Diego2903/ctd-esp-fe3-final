@@ -40,8 +40,6 @@ const Card = ({ name, username, id, showButtonFav = true }) => {
   return (
     <div className="card">
       {/* En cada card deberan mostrar en name - username y el id */}
-
-
       <Link to={`/dentista/${id}`} className="d-flex align-items-center flex-column">
         <img src="./images/doctor.jpg" alt="doctor" className="doctor-avatar" />
         <h4>

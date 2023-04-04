@@ -8,10 +8,10 @@ const Contact = () => {
 
 
   return (
-    <div className='d-flex flex-column justify-content-center align-items-center  mt-5'>
+    <div className='contact d-flex flex-column justify-content-center align-items-center mt-3'>
       <div className='w-50 mw-50 d-flex flex-column align-items-center justify-content-center flex-wrap '>
-        <h2>Want to know more?</h2>
-        <p>Send us your questions and we will contact you</p>
+        <h2>¿Quieres saber más?</h2>
+        <p>Envíanos tus consultas y nos pondremos en contacto contigo</p>
         <Form />
       </div>
     </div>

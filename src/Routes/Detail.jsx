@@ -30,12 +30,12 @@ const Detail = () => {
   }
 
   return (
-    <div className='d-flex flex-column justify-content-center align-items-center mt-5'>
-      <div className='w-50 mw-50 d-flex flex-column align-items-center justify-content-center flex-wrap '>
+    <div className='details d-flex flex-column justify-content-center align-items-center mt-3 mb-3'>
+      <div className='w-50 mw-50 d-flex flex-column align-items-center justify-content-center flex-wrap'>
 
-        <h1>Detail Dentist id </h1>
+        <h1>Detalle Dentista</h1>
         {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
-        <table className="table">
+        <table className="table m-3">
           <thead>
             <tr>
               <th scope="col">Nombre</th>

@@ -1,6 +1,12 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   margin: 0;
-  background-color: rgb(234, 234, 234);
+  margin-bottom: 40px;
+  background-color: #FFFFF1;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -8,11 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.favButton{
+.favButton {
   background-color: rgba(136, 136, 136, 0.116);
   padding: 4px;
   border-radius: 8px solid #000;
@@ -20,69 +22,67 @@ code {
   cursor: pointer;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-
-a{
-  color: #000;
+a {
+  color: #fff;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
 }
-a:hover{
+
+a:hover {
   color: rgb(136, 136, 136);
-} 
+}
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
   text-align: center;
-  padding: 2rem;
-  position: relative;
+  align-items: center;
+  padding: 1.5rem;
+  position: absolute;
   bottom: 0;
-  width: 90%;
+  width: 100%;
   height: 40px;
-  margin-top: 2rem;
 }
 
-footer > img{
-  width: 200px;
-  margin: 0;
-}
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
-}
-
-/* form{
+.imagen-dh {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 300px;
-  height: 100px;
-  margin: 20px ;
-} */
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 
+.imagen-dh>img {
+  width: 8rem;
+  margin: 0;
+  text-align: center;
+}
 
-.card{
+.card {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  background-color: #f7d547;
+  border-radius: 16px;
+  color: #fff;
   width: 200px;
   padding: 1rem;
-  border-radius: 16px;
+  margin-bottom: 1.5rem;
 }
 
-.card:hover{
+.card:hover {
   border: 0.5px solid rgb(206, 217, 142);
 }
 
-.card-grid{
+.card-grid {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 1rem;
   width: 90vw;
   height: auto;
@@ -97,16 +97,18 @@ footer > p{
 }
 
 table {
- border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    display: table;
-    border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
 
 }
 
-td, th {
-  border: 1px solid #dddddd;
+td,
+th {
+  color: #000;
+  border: 1px solid #000;
   text-align: left;
   padding: 8px;
 }
@@ -115,19 +117,20 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.dark {
-  background-color: #12121296;
-  color: white;
+[data-base-theme="dark"] body {
+  background-color: #282c34;
+  color: #fff;
 }
-.dark > a {
-  color: white;
-}
-
 [data-base-theme="dark"] .navbar {
   background-color: #c7b3f4;
 }
 
-[data-base-theme="dark"] .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+[data-base-theme="dark"] footer {
+  background-color: #c7b3f4;
+}
+
+[data-base-theme="dark"] .navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
   color: #000;
   font-weight: 600;
 }
@@ -136,10 +139,26 @@ tr:nth-child(even) {
   color: #fff;
 }
 
-[data-base-theme="dark"] .card{
-  background-color: #966ff036;
+[data-base-theme="dark"] .card {
+  background-color: #fff;
+  color: #000;
 }
 
-[data-base-theme="dark"] .card > a{
- color: #fff;
+[data-base-theme="dark"] .card>a {
+  color: #000;
 }
+
+
+[data-base-theme="dark"]
+th {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+[data-base-theme="dark"]
+td {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+

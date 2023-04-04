@@ -12,9 +12,9 @@ const Favs = () => {
   
 
   return (
-    <div>
-      <h1>Dentists Favs</h1>
-      <div className="card-grid">
+    <div className="mt-3">
+      <h1>Dentistas favoritos</h1>
+      <div className="card-grid mt-5">
         {/* este componente debe consumir los destacados del localStorage */}
         {/* Deberan renderizar una Card por cada uno de ellos */}
         {

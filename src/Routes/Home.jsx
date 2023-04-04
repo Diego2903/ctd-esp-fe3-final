@@ -11,7 +11,7 @@ const Home = () => {
   const { medicos } = useContext(ContextGlobal)
 
   return (
-    <main className='mt-5'>
+    <main className='mt-3'>
 
       <h1>Home</h1>
       <div className='card-grid mt-3'>

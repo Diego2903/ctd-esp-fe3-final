@@ -39,11 +39,11 @@ export const Form = () => {
             <form onSubmit={handleSubmit} className="mt-3">
                 <div className="m-3">
                     <label className="form-label">Nombre Completo</label>
-                    <input type="text" className="form-control" placeholder="Ingresa tu nombre completo" onChange={onChangeInput} name="nombreCompleto" autoComplete="off"/>
+                    <input type="text" className="form-control" placeholder="Julanito Perez" onChange={onChangeInput} name="nombreCompleto" autoComplete="off"/>
                 </div>
                 <div className="m-3">
                     <label className="form-label">Escribe tu correo electronico</label>
-                    <input type="email" className="form-control" placeholder="Ingresa tu correo electronico" onChange={onChangeInput} name="email" autoComplete="off"/>
+                    <input type="email" className="form-control" placeholder="example@gmail.com" onChange={onChangeInput} name="email" autoComplete="off"/>
                 </div>
                 <div className="d-grid gap-2">
                     <button type="submit" className="btn btn-primary m-3">Enviar</button>
