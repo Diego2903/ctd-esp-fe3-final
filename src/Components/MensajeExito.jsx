@@ -1,8 +1,8 @@
 export const MensajeExito = ({ nombreCompleto}) => {
     return (
-      <div className='contenedor-card'>
+      <div >
         <div className='mt-3'>
-          <h3> Muchas gracias {nombreCompleto}, te contactaremos lo antes posible via emaíl</h3>
+          <h4> Muchas gracias {nombreCompleto}, te contactaremos lo antes posible via emaíl</h4>
         </div>
       </div>
     )

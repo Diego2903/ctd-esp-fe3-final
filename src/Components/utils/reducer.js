@@ -1,13 +1,16 @@
 
 
+export const initialState = { theme: localStorage.getItem('theme' ) === 'dark' , data: [] }
+
+
 export const reducer = (state, action) => {
 
     switch (action.type) {
-        case "LIGTHMODE":
-            return { darkmode: false}
+        case "light":
+            return { theme: false}
             
-        case "DARKMODE":
-            return { darkmode: true}
+        case "dark":
+            return { theme: true}
         default:
             return state;
     }

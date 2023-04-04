@@ -35,8 +35,8 @@ export const Form = () => {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit} className="contenedor-formulario mt-3">
+        <div className="w-75">
+            <form onSubmit={handleSubmit} className="mt-3">
                 <div className="m-3">
                     <label className="form-label">Nombre Completo</label>
                     <input type="text" className="form-control" placeholder="Ingresa tu nombre completo" onChange={onChangeInput} name="nombreCompleto" autoComplete="off"/>

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: rgb(234, 234, 234);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,9 +14,9 @@ code {
 }
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
-  border: none;
-  width: 100%;
+  padding: 4px;
+  border-radius: 8px solid #000;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 
@@ -23,12 +24,6 @@ h1{
   text-align: center;
 }
 
-nav{
-  display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
-}
 
 a{
   color: #000;
@@ -61,14 +56,14 @@ footer > p{
   padding-top: 0.7rem;
 }
 
-form{
+/* form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
   height: 100px;
-  margin: 0 auto;
-}
+  margin: 20px ;
+} */
 
 
 .card{
@@ -77,8 +72,8 @@ form{
   flex-direction: column;
   align-items: center;
   width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  padding: 1rem;
+  border-radius: 16px;
 }
 
 .card:hover{
@@ -96,8 +91,9 @@ form{
 }
 
 .doctor-avatar {
-  width: 15vw;
+  width: 100%;
   height: auto;
+  max-width: 150px;
 }
 
 table {
@@ -119,10 +115,31 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.dark{
+.dark {
   background-color: #12121296;
   color: white;
 }
 .dark > a {
   color: white;
+}
+
+[data-base-theme="dark"] .navbar {
+  background-color: #c7b3f4;
+}
+
+[data-base-theme="dark"] .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: #000;
+  font-weight: 600;
+}
+
+[data-base-theme="dark"] .nav-link {
+  color: #fff;
+}
+
+[data-base-theme="dark"] .card{
+  background-color: #966ff036;
+}
+
+[data-base-theme="dark"] .card > a{
+ color: #fff;
 }
