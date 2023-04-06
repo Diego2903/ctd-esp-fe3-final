@@ -3,12 +3,10 @@ import { NavLink } from 'react-router-dom'
 import { ContextGlobal } from './utils/global.context'
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
 const Navbar = () => {
 
   const { state, dispatch } = useContext(ContextGlobal)
   const theme = state.theme
-
 
   const onClick = (e) => {
     const { checked } = e.target
@@ -28,7 +26,6 @@ const Navbar = () => {
           <NavLink className={({ isActive }) => `nav-item nav-link ${isActive ? "active" : ""}`} to="/favs">Favs</NavLink>
         </div>
       </div>
-
 
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
       <div className="form-check form-switch" style={{marginRight: 8}}>

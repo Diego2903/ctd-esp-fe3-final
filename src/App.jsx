@@ -6,8 +6,6 @@ import Favs from "./Routes/Favs";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
-
-
 function App() {
   return (
 
@@ -19,7 +17,6 @@ function App() {
           <Route path="contacto" element={<Contact />} />
           <Route path="dentista/:id" element={<Detail />} />
           <Route path="favs" element={<Favs />} />
-
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
 
