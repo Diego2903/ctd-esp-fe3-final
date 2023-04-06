@@ -39,5 +39,11 @@
   },
   "devDependencies": {
     "msw": "^0.47.3"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/*.test.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ]
   }
 }
